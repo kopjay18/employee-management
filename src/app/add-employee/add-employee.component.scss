@@ -1,0 +1,27 @@
+.edit-employee-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+  
+    mat-card {
+      width: 400px;
+      padding: 20px;
+  
+      form {
+        display: flex;
+        flex-direction: column;
+  
+        mat-form-field {
+          width: 100%;
+          margin-bottom: 16px;
+        }
+  
+        button {
+          align-self: flex-end;
+        }
+      }
+    }
+  }
+  

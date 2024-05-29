@@ -1,0 +1,11 @@
+<div *ngIf="employee">
+  <h2>{{ employee.firstName }} {{ employee.lastName }}</h2>
+  <p>Username: {{ employee.username }}</p>
+  <p>Email: {{ employee.email }}</p>
+  <p>Birth Date: {{ employee.birthDate | date }}</p>
+  <p>Basic Salary: {{ employee.basicSalary | currency:'Rp. ' }}</p>
+  <p>Status: {{ employee.status }}</p>
+  <p>Group: {{ employee.group }}</p>
+  <p>Description: {{ employee.description | date }}</p>
+  <button mat-raised-button color="primary" (click)="onBack()">Back to List</button>
+</div>
